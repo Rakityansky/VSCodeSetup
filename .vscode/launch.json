@@ -1,0 +1,32 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+       {
+            "name": "Active launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/${fileBasenameNoExtension}",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "preLaunchTask": "gcc build active file"
+        },
+        {
+            "name": "Makefile launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/my_program",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "MIDebuggerPath": "/usr/bin/gdb",
+            "preLaunchTask": "make build"
+        }        
+    ]
+}
